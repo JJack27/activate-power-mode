@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoelBesada/activate-power-mode.git"
+    "url": "https://github.com/JJack27/activate-power-mode"
   },
   "license": "MIT",
   "engines": {
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/JoelBesada/activate-power-mode/issues"
   },
-  "homepage": "https://github.com/JoelBesada/activate-power-mode#readme",
+  "homepage": "https://github.com/JJack27/activate-power-mode#readme",
   "_id": "activate-power-mode@0.3.2",
   "_shasum": "4f832638f75311688cdf4912b46a9af9048dc0df",
   "_resolved": "file:..\\d-1151030-4852-igd3k0\\package.tgz",
