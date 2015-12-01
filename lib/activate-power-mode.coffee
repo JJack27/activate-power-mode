@@ -75,6 +75,10 @@ module.exports = ActivatePowerMode =
       @particles[@particlePointer] = part
       @particlePointer = (@particlePointer + 1) % 500
 
+  _randomNum: (max,min=0) ->
+	   return Math.floor(Math.random() * (max - min) + min)
+	# min is set to 0 by default but a different value can be passed to function
+
   getColorAtPosition: (left, top) ->
     offset = @editorElement.getBoundingClientRect()
     el = atom.views.getView(@editor).shadowRoot.elementFromPoint(
@@ -83,9 +87,15 @@ module.exports = ActivatePowerMode =
     )
 
     if el
-      getComputedStyle(el).color
+      r = @_randomNum(255)
+      g = @_randomNum(255)
+      b = @_randomNum(255)
+      "rgb( #{r},#{g},#{b})"
     else
-      "rgb(255, 255, 255)"
+      r = @_randomNum(255)
+      g = @_randomNum(255)
+      b = @_randomNum(255)
+      "rgb( #{r},#{g},#{b})"
 
   createParticle: (x, y, color) ->
     x: x
